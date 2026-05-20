@@ -30,7 +30,10 @@ Key columns used:
 Is Fraudulent — our target variable (1 = fraud, 0 = legitimate)
 
 Overview - 1.5 million e-commerce transactions across two files, goal is to predict  fraudulent ones before payment is processed.
+
 Approach - combined two files, cleaned invalid ages, explored fraud patterns by payment method, category and hour, built a Random Forest classifier with balanced class weights, evaluated on recall and f1 rather than currency.
+
 Findings - fraud rate of 5%, strongest predictors are transaction amount, account age and transaction hour. 
 Fill in your actual recall score. Certain payment methods and payment categories show higher fraud rates.
+
 Limitations - no real-time element, model would need retraining as fraud patterns evolve, no cost-benefit analysis of false positives vs false negatives included.
